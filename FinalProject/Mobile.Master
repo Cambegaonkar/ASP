@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mobile.master.cs" Inherits="FinalProject.Mobile" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Mobile Planet</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+    
+<body class="container">
+    <header>
+        <div class="text-center">
+          
+            <h1>Mobile<asp:Image ID="Image2" ImageUrl="~/Images/logo.png" Height="50px" Width="50px" runat="server" />Planet</h1></div>
+            <div class="container">
+          
+            <br />
+            <h4>Mobiles At Amazing Deals</h4>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.aspx">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Loginpage.aspx">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.aspx">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    </header>
+    <main>
+             <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+         
+        </main>
+
+    <footer>
+        <p>
+            To contact us, call us at 800-555-0400 or email us at
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="mailto:mobileplanet@mobileplanet.com">mobileplanet@smobileplanet.com</asp:HyperLink>
+        </p>
+    </footer>
+</body>
+</html>
